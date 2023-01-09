@@ -1,0 +1,117 @@
+IMAGE UPLOAD ,CROSS SIDE SCRIPTING,DEPLOYING THE APP
+TO BUILD CAMPGROUNDS AND ACCESS THEM 
+CLUSTERING BEHAVIOUR
+AUTHENICATION
+WE CAN LOGIN AND COME UP WITH NEW 
+GEOCODING 
+we can leave a review as well
+we can also delete the review
+allows multiple user access
+
+
+HOW TO ACCESS YELPCAMP CODES?
+-first lecture has a link to the git repo
+-we can download as zip repo
+-npm install to get all the dependencies
+
+
+CAMPGROUND MODEL BASICS
+name
+
+EJS MATE
+--allows to add some fun functionality to the ejs
+--we can define different partial and then include them in the answer
+npm i ejs-mate
+const npmMate=require('ejs-mate');
+layout allows to define the boilerplate
+--we only need to add that layout
+--if we want just one thing to move down its a thing to do margin top as auto
+
+
+
+CLIENT SIDE FORM VALIDATIONS
+--if we want one particular value to be must present then we do the validation 
+--we can use the required html validation but we are trying to use the validation
+--bootstrap to decide validation
+--set required and tell the browser nit to validate the form but we will need a js as weel
+--novalidate actually prevents the required stuff to actually require anything
+
+
+ERROR HANDLING USING THE app.use((err,req,res,next)=>{
+res.senf();
+}
+
+error class
+
+--if something went wrong with async function it makes the way down to the app.use()
+
+VALIDATING WHEN WE ARE ADDING THE DATA ETC
+
+
+JOI
+--not express specific
+--very comprehensive
+--minimum maximum length
+--server side validations
+
+
+
+REVIEW MODEL
+--if we can add and delete the review 
+--1-N relationships
+--as we can have so many review
+--we can break the review indivulally
+--we will update the campground model too
+by adding the revire object
+
+
+REVIEW FORMS
+--connection on the show.ejs
+--easiest way is to include the path in the reviews
+--post/campgrounds/:id/reviews
+
+
+
+RESTRUCTURING THE ROUTES
+
+
+AUTHENICATION
+--PASSPORT : library to add authenication on the node app
+--passport local mongoose
+npm i passport passport-local passport-local-mongoose
+--Authenication 
+
+
+
+ISSUES WITH IMAGE 
+html doesn't support the image
+mongodb usually don't use the image
+cloudinary is one of the tools to store the image etc
+set up form and upload the image 
+send it to cloudinary 
+we then take  the url and then we senf the dta somewhere else 
+
+THE MULTER MIDDLEWARE 
+--generic form usually dn't support the upload option
+--enctype=MIME TYPE
+--when we submit a multipart form then there is a nee
+ to 
+--multer helps tto parse the multi part form 
+--adds a body object to parse a multiform object to request object
+--configuration object
+--we can then call upload.array or upload.avatar
+--upload single or multiple images
+
+
+.env 
+--to make something secret file
+--most users wont see it 
+--like a hidden file
+--dotenv file 
+--while uploading the env 
+
+
+multer
+cloudinary
+ejs view engine
+
